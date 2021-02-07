@@ -1,0 +1,23 @@
+"use strict";
+exports.__esModule = true;
+var Example_1 = require("./Example");
+var log = function (msg) { return console.log(msg); };
+log("hello");
+var c = [true, 's', 8];
+console.log(c);
+var Color;
+(function (Color) {
+    Color[Color["Red"] = 0] = "Red";
+    Color[Color["Green"] = 1] = "Green";
+    Color[Color["Blue"] = 2] = "Blue";
+})(Color || (Color = {}));
+;
+var backgroundColor = Color.Red;
+console.log(backgroundColor);
+var message = "abc";
+message.endsWith('C');
+var x = new Example_1.example(5);
+var i = x.S;
+x.S = 10;
+console.log(x.S);
+console.log(i);
