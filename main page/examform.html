@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Exam Form</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://kit.fontawesome.com/64d58efce2.js"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       
+    <link href="./styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="fixed-top form-head">
+        <a href="./home.html" style=" color:floralwhite;
+        background-color: transparent;
+        text-decoration: none;"><span class="fa fa-home fa-lg"></span>HOME</a>
+    </header>
+    
+    <div class="container exam-form">
+        
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-9">
+               <h3 style="text-decoration: underline;">Fill the Form below</h3>
+            </div>
+             <div class="col-12 col-md-9">
+                 <form>
+                     <div class="form-group row">
+                         <label for="name" class="col-md-3 col-form-label">Student's Name:</label>
+                         <div class="col-md-9">
+                             <input type="text" class="form-control" id="name" name="name" placeholder="As Registered in college">
+                         </div>
+                     </div>
+            
+                     <div class="form-group row">
+                        <label for="emailid" class="col-md-3 col-form-label">Email Id:</label>
+                        <div class="col-md-9">
+                            <input type="email" class="form-control" id="emailid" value="Email">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="regNo" class="col-md-3 col-form-label">Register Number</label>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" id="regNo" name="regNo" placeholder="Register No">
+                        </div>
+                        <label for="month" class="col-md-3 col-form-label">Month and Year of Examination:</label>
+                        <div class="col-md-3">
+                            <input type="month" class="form-control" id="month" name="month">
+                        </div>
+                    </div>
+                      <div class="form-group row">
+                         <label for="clgcode" class="col-md-3 col-form-label">College Code:</label>
+                         <div class="col-md-3">
+                             <input type="text" class="form-control" id="clgCode" name="clgCode" placeholder="College Code">
+                         </div>
+                         <label for="roll-no" class="col-md-3 col-form-label">Roll No:</label>
+                         <div class="col-md-3">
+                            <input type="text" class="form-control" id="roll-no" name="roll-no" placeholder="Roll Number">
+                        </div>
+                     </div>
+                     <div class="form-group row">
+                         <label for="course" class="col-md-3 col-form-label">Course:</label>
+                         <div class="col-md-3">
+                            <select class="form-control" id="course">
+                                <option>BCom</option>
+                                <option>BCA</option>
+                                <option>BSc</option>
+                                <option>BCA</option>
+                            </select>
+                         </div>
+                         <label for="sem" class="col-md-3 col-form-label">Semester:</label>
+                         <div class="col-md-3">
+                            <select class="form-control" id="sem">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                            </select>
+                         </div>
+                     </div>
+                     <div class="form-group row" style="font-weight: bold;">
+                        <label class="col-5 col-form-label"><u>Subject</u></label>
+                        <label class="col-3 col-form-label"><u>Subject-Code</u></label>
+                        <label  class="col-2 col-form-label"><u>Fees</u></label>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-5 col-form-label">Subject1</label>
+                        <label class="col-3 col-form-label">Subject-Code1</label>
+                        <label class="col-2 col-form-label">Fees1</label>
+                    </div>
+                    <div class="form-group row">
+                       <strong><label class="col-12 col-form-label">Select optionals</label></strong> 
+                    </div>
+                    <div class="form-group row">
+                        <input class="mt-2 form-check-input" type="radio" id="option1" name="opsub" value="opsub1">
+                        <label class="col-5 col-form-label">Subject1</label>
+                        <label class="col-3 col-form-label">Subject-Code1</label>
+                        <label class="col-2 col-form-label">Fees1</label>
+
+                    </div>
+                    <div class="form-group row">
+                        <input class="mt-2  form-check-input" type="radio" id="option2" name="opsub" value="opsub2">
+                        <label class="col-5">Subject1</label>
+                        <label class="col-3">Subject-Code1</label>
+                        <label class="col-2">Fees1</label>
+
+                    </div>
+                    <div class="form-group row">
+                     </div>
+                     <div class=" row">
+                         <div class="form-group col-md-6">
+                             <div class="form-check">
+                                 <input type="checkbox" class="form-check-input"
+                                 name="approve" id="approve" value="">
+                                 <label class="form-check-label" for="approve">
+                                     <strong> Do you have any backlogs
+                                     </strong>
+ 
+                                 </label>
+                                 
+                         </div>
+                     </div>
+                     <label for="bsem" class="col-md-2 col-form-label">Backlog Semester</label>
+                     <div class="form-group col-md-3">
+                         <select class="form-control" id="bsem">
+                            <option>1</option> 
+                            <option>2</option>
+                             <option>3</option>
+                             <option>4</option>
+                             <option>5</option>
+                             <option>6</option>
+                         </select>
+ 
+                     </div>
+                    </div>
+                    <div class="form-group row">
+                        <strong><label class="col-12 col-form-label">Select Backlog Subjects</label></strong> 
+                     </div>
+                     <div class="form-group row">
+                         <input class="mt-3 form-check-input" type="checkbox" id="blog1" name="blog" value="blog1">
+                         <label class="col-5 col-form-label">Subject1</label>
+                         <label class="col-3 col-form-label">Subject-Code1</label>
+                         <label class="col-2 col-form-label">Fees1</label>
+ 
+                     </div>
+                     <div class="form-group row">
+                         <input class="mt-3 form-check-input" type="checkbox" id="blog2" name="blog" value="blog2">
+                         <label class="col-5 col-form-label">Subject1</label>
+                         <label class="col-3 col-form-label">Subject-Code1</label>
+                         <label class="col-2 col-form-label">Fees1</label>
+ 
+                     </div>
+
+                 <div class="form-group row justify-content-center">
+                     <div class="col-md-12">
+                         <button type="submit" class="btn btn-primary">
+                             Submit
+                         </button>
+                     </div>
+                 </form>
+             </div>
+              <div class="col-12 col-md">
+             </div>
+        </div>
+ 
+    </div>
+</body>
+</html>
